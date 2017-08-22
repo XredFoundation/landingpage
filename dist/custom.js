@@ -100,7 +100,7 @@ $(document)
         }
     	}, function(err, t) {
         i18next_render(err, t);
-        $('.ui.dropdown.language').dropdown('set selected', [i18next.language]);
+        $('.ui.dropdown.language').dropdown('set selected', [i18next.language.split('-')[0]]);
       });
 
     var i18next_render = function(err, t) {
