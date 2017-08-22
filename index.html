@@ -1010,6 +1010,32 @@
     <!-- Placeholder for the tooltip -->
     <div id="vis-tooltip" class="vg-tooltip"></div>
 
+    <div class="ui modal access-restriction">
+      <i class="close icon"></i>
+      <div class="header">
+        <span class="i18n-access-restriction">Access restriction</span>
+      </div>
+      <div class="image content">
+        <div class="ui medium image">
+          <i class="user massive circle icon"></i>
+        </div>
+        <div class="description">
+          <div class="ui header"><span class="i18n-access-restriction-detected">We've detected your location.</span></div>
+          <p><span class="i18n-access-restriction-body">In your location can't use this website due to domestic laws. Please read our Terms and Conditions document before you will decide to use our website.</span></p>
+          <p><span class="i18n-access-restriction-right">We have right defined your location?</span></p>
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui black deny button">
+          <span class="i18n-access-restriction-no-use">Yep, I won't use your website</span>
+        </div>
+        <div class="ui positive right labeled icon button">
+          <span class="i18n-access-restriction-right-use">Nope, I will use your website</span>
+          <i class="checkmark icon"></i>
+        </div>
+      </div>
+    </div>
+
     <script src="dist/jquery/jquery.min.js"></script>
     <script src="dist/i18next/i18nextXHRBackend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/7.1.3/i18next.min.js"> </script>
@@ -1023,5 +1049,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-tooltip/0.4.3/vega-tooltip.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vega-tooltip/0.4.3/vega-tooltip.min.css">
     <script src="dist/custom.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-105079904-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>

@@ -151,5 +151,11 @@
   "i18n-faq-23-title": "What if I do not verify?",
   "i18n-faq-23-content": "While verification is not obligatory, we expect every prudent ICO participant to understand the importance of his/her role in the project. We believe that investors that expect XRED Foundation to succeed will not consider the verification a burden.",
   "i18n-faq-24-title": "Will my data be protected?",
-  "i18n-faq-24-content": "Our website is scanned on a regular basis for security issues and known vulnerabilities in order to make your visit to our site as safe as possible. We use regular Malware Scanning. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive information you supply is encrypted via Secure Socket Layer (SSL) technology. We implement a variety of security measures for all types of data transactions to maintain the safety of users' personal information. All transactions are processed through a gateway provider and are not processed or stored on our servers."
+  "i18n-faq-24-content": "Our website is scanned on a regular basis for security issues and known vulnerabilities in order to make your visit to our site as safe as possible. We use regular Malware Scanning. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive information you supply is encrypted via Secure Socket Layer (SSL) technology. We implement a variety of security measures for all types of data transactions to maintain the safety of users' personal information. All transactions are processed through a gateway provider and are not processed or stored on our servers.",
+  "i18n-access-restriction": "Access restriction",
+  "i18n-access-restriction-detected": "We have detected your location.",
+  "i18n-access-restriction-body": "In your location you cannot use this website due to domestic laws. Please read our Terms and Conditions document before you decide to use our website.",
+  "i18n-access-restriction-right": "Have we defined your location right?",
+  "i18n-access-restriction-no-use": "Yes, I will not use your website",
+  "i18n-access-restriction-right-use": "No, I will use your website"
 }

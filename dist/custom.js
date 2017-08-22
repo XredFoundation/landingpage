@@ -4,6 +4,12 @@ $(document)
     var icoStartDate = "2017-11-01";
     var icoEndDate   = "2017-12-15";
 
+    $.getJSON('//freegeoip.net/json/?callback=?', function(data) {
+      if(data['country_code'] == 'US') {
+        $('.ui.modal.access-restriction').modal('show');
+      }
+    });
+
     // fix menu when passed
     $('.masthead')
       .visibility({
@@ -245,7 +251,13 @@ $(document)
                    'faq-23-title',
                    'faq-23-content',
                    'faq-24-title',
-                   'faq-24-content'
+                   'faq-24-content',
+                   'access-restriction',
+                   'access-restriction-detected',
+                   'access-restriction-body',
+                   'access-restriction-right',
+                   'access-restriction-no-use',
+                   'access-restriction-right-use'
                  ];
 
       for(var i in names) {
