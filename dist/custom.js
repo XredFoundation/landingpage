@@ -110,7 +110,12 @@ $(document)
       });
 
     var i18next_render = function(err, t) {
-      moment.locale(i18next.language);
+      if(i18next.language == 'cn') {
+        moment.locale('zh-cn');
+      } else {
+        moment.locale(i18next.language);
+      }
+
       // initialized and ready to go!
       var names = ['top',
                    'description',
