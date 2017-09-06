@@ -62,6 +62,9 @@ $(document)
             }
           });
         }
+        if($choice.attr("data-type") == "link-root") {
+          document.location = "/#" + value;
+        }
       }
     });
 
@@ -193,6 +196,9 @@ $(document)
                    'team-cto-name',
                    'team-cto-position',
                    'team-cto-description',
+                   'team-advisor-name',
+                   'team-advisor-position',
+                   'team-advisor-description',
                    'team-vacancy-name',
                    'team-vacancy-position',
                    'main-documents',
@@ -277,138 +283,223 @@ $(document)
       $('.i18n-e-mail').attr('placeholder', i18next.t('i18n-e-mail'));
 
       document.title = i18next.t('i18n-title-page');
+    }
+    /**
+     * Vega.js
+     **/
 
-      /**
-       * Vega.js
-       **/
+    function addVgExample(path, id, options) {
+      d3.json(path, function (error, vgSpec) {
+        if (error) {
+          return console.error(error);
+        }
+        var runtime = vega.parse(vgSpec);
+        var view = new vega.View(runtime)
+          .initialize(document.querySelector(id))
+          .hover()
+          .run();
+        vegaTooltip.vega(view, options);
+      })
+    }
 
-      function addVgExample(path, id, options) {
-        d3.json(path, function (error, vgSpec) {
-          if (error) {
-            return console.error(error);
-          }
-          var runtime = vega.parse(vgSpec);
-          var view = new vega.View(runtime)
-            .initialize(document.querySelector(id))
-            .hover()
-            .run();
-          vegaTooltip.vega(view, options);
+    var tokensOpts = {
+      showAllFields: false,
+      fields: [
+        {
+          field: "percents",
+          title: "%",
+          formatType: "number"
+        }
+      ]
+    }
+    addVgExample("assets/token-pie.vg.json", "#token-distribution", tokensOpts);
+
+    var bonusesOpts = {
+      showAllFields: false,
+      fields: []
+    }
+
+    addVgExample("assets/bonuses-radial.vg.json", "#token-bonus", bonusesOpts);
+
+    /**
+     * Form validations
+    **/
+    $('.ui.form.subscription')
+    .form({
+      fields: {
+        'email-subscription': {
+          identifier : 'email-subscription',
+          rules: [
+            {
+              type   : 'email',
+              prompt : i18next.t('i18n-e-mail-invalid')
+            }
+          ]
+        }
+      }
+    });
+
+    $('.ui.form.pre-sale')
+    .form({
+      fields: {
+        'email': {
+          identifier : 'email',
+          rules: [
+            {
+              type   : 'email',
+              prompt : i18next.t('i18n-e-mail-invalid')
+            }
+          ]
+        }
+      },
+      onSuccess: function(event, fields) {
+        event.preventDefault();
+
+        // Use Ajax to submit form data
+        var url = 'https://script.google.com/macros/s/AKfycbxYvRZ8DJBa8CwHUVl1aSUlSyIOgLQsL0tqNKADfpOXC7rI-rDs/exec';
+        // show the loading
+        $('.pre-sale').addClass('loading');
+        var jqxhr = $.post(url, fields, function(data) {
+           console.log("Success! Data: " + data.statusText);
+           $('.pre-sale').removeClass('loading').addClass('success');
         })
+        .fail(function(data) {
+           console.warn("Error! Data: " + data.statusText);
+           $('.pre-sale').removeClass('loading');
+           // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
+           if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+              //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
+              //Success!
+              $('.pre-sale').addClass('success');
+           } else {
+             $('.pre-sale').addClass('warning');
+           }
+        });
       }
+    });
 
-      var tokensOpts = {
-        showAllFields: false,
-        fields: [
-          {
-            field: "percents",
-            title: "%",
-            formatType: "number"
-          }
-        ]
-      }
-      addVgExample("assets/token-pie.vg.json", "#token-distribution", tokensOpts);
-
-      var bonusesOpts = {
-        showAllFields: false,
-        fields: []
-      }
-
-      addVgExample("assets/bonuses-radial.vg.json", "#token-bonus", bonusesOpts);
-
-      /**
-       * Form validations
-      **/
-      $('.ui.form.subscription')
-      .form({
-        fields: {
-          'email-subscription': {
-            identifier : 'email-subscription',
-            rules: [
-              {
-                type   : 'email',
-                prompt : i18next.t('i18n-e-mail-invalid')
-              }
-            ]
-          }
+    $('.ui.form.subscription')
+    .form({
+      fields: {
+        'email': {
+          identifier : 'email',
+          rules: [
+            {
+              type   : 'email',
+              prompt : i18next.t('i18n-e-mail-invalid')
+            }
+          ]
         }
-      });
+      },
+      onSuccess: function(event, fields) {
+        event.preventDefault();
 
-      $('.ui.form.pre-sale')
-      .form({
-        fields: {
-          'email': {
-            identifier : 'email',
-            rules: [
-              {
-                type   : 'email',
-                prompt : i18next.t('i18n-e-mail-invalid')
-              }
-            ]
+        // Use Ajax to submit form data
+        var url = 'https://script.google.com/macros/s/AKfycbxUYRxHb8All5p6fApItKM5f6XwOkrpHqewJFe2iWTN3mWPwMY/exec';
+        // show the loading
+        $('.subscription').addClass('loading');
+        var jqxhr = $.post(url, fields, function(data) {
+           console.log("Success! Data: " + data.statusText);
+           $('.subscription').removeClass('loading').addClass('success');
+        })
+        .fail(function(data) {
+           console.warn("Error! Data: " + data.statusText);
+           $('.subscription').removeClass('loading');
+           // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
+           if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+               //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
+               console.log("Success! Data: " + data.statusText);
+               //Success!
+               $('.subscription').addClass('success');
+           } else {
+             $('.subscription').addClass('warning');
+           }
+        });
+      }
+    });
+
+    /**
+     *  Countdown
+    **/
+    if($('#wrapper-countdown').length) {
+
+      var countdown_template =
+        '<div class="time <%= label %>">' +
+          '<span class="count curr top"><%= curr %></span>' +
+          '<span class="count next top"><%= next %></span>' +
+          '<span class="count next bottom"><%= next %></span>' +
+          '<span class="count curr bottom"><%= curr %></span>' +
+          '<span class="label"><%= label.length < 6 ? label : label.substr(0, 3)  %></span>' +
+        '</div>';
+
+      var labels = ['w', 'd', 'h', 'm', 's'], //['weeks', 'days', 'hours', 'minutes', 'seconds'],
+          dateCountdown = $('#wrapper-countdown').attr("date") ? $('#wrapper-countdown').attr("date") : Date.now() + new Number($('#wrapper-countdown').attr("rel-date")).valueOf(),
+          template = _.template(countdown_template),
+          currDate = '00:00:00:00:00',
+          nextDate = '00:00:00:00:00',
+          parser = /([0-9]{2})/gi,
+          $countdown = $('#wrapper-countdown');
+
+      // Parse countdown string to an object
+      function strfobj(str) {
+        var parsed = str.match(parser),
+          obj = {};
+        labels.forEach(function(label, i) {
+          obj[label] = parsed[i]
+        });
+        return obj;
+      }
+      // Return the time components that diffs
+      function diff(obj1, obj2) {
+        var diff = [];
+        labels.forEach(function(key) {
+          if (obj1[key] !== obj2[key]) {
+            diff.push(key);
           }
-        },
-        onSuccess: function(event, fields) {
-          event.preventDefault();
-
-          // Use Ajax to submit form data
-          var url = 'https://script.google.com/macros/s/AKfycbxYvRZ8DJBa8CwHUVl1aSUlSyIOgLQsL0tqNKADfpOXC7rI-rDs/exec';
-          // show the loading
-          $('.pre-sale').addClass('loading');
-          var jqxhr = $.post(url, fields, function(data) {
-             console.log("Success! Data: " + data.statusText);
-             $('.pre-sale').removeClass('loading').addClass('success');
-          })
-          .fail(function(data) {
-             console.warn("Error! Data: " + data.statusText);
-             $('.pre-sale').removeClass('loading');
-             // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
-             if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-                //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
-                //Success!
-                $('.pre-sale').addClass('success');
-             } else {
-               $('.pre-sale').addClass('warning');
-             }
+        });
+        return diff;
+      }
+      // Build the layout
+      var initData = strfobj(currDate);
+      labels.forEach(function(label, i) {
+        $countdown.append(template({
+          curr: initData[label],
+          next: initData[label],
+          label: label
+        }));
+      });
+      // Starts the countdown
+      $countdown.countdown(dateCountdown, function(event) {
+        var newDate = event.strftime('%w:%d:%H:%M:%S'),
+            data;
+        if (newDate !== nextDate) {
+          currDate = nextDate;
+          nextDate = newDate;
+          // Setup the data
+          data = {
+            'curr': strfobj(currDate),
+            'next': strfobj(nextDate)
+          };
+          // Apply the new values to each node that changed
+          diff(data.curr, data.next).forEach(function(label) {
+            var selector = '.%s'.replace(/%s/, label),
+                $node = $countdown.find(selector);
+            // Update the node
+            $node.removeClass('flip');
+            $node.find('.curr').text(data.curr[label]);
+            $node.find('.next').text(data.next[label]);
+            // Wait for a repaint to then flip
+            _.delay(function($node) {
+              $node.addClass('flip');
+            }, 50, $node);
           });
         }
-      });
 
-      $('.ui.form.subscription')
-      .form({
-        fields: {
-          'email': {
-            identifier : 'email',
-            rules: [
-              {
-                type   : 'email',
-                prompt : i18next.t('i18n-e-mail-invalid')
-              }
-            ]
+        if(event.type == "finish"){
+          console.log('end!');
+          if($("#redirect-location").length) {
+            document.location = $("#redirect-location").attr("location");
           }
-        },
-        onSuccess: function(event, fields) {
-          event.preventDefault();
-
-          // Use Ajax to submit form data
-          var url = 'https://script.google.com/macros/s/AKfycbxUYRxHb8All5p6fApItKM5f6XwOkrpHqewJFe2iWTN3mWPwMY/exec';
-          // show the loading
-          $('.subscription').addClass('loading');
-          var jqxhr = $.post(url, fields, function(data) {
-             console.log("Success! Data: " + data.statusText);
-             $('.subscription').removeClass('loading').addClass('success');
-          })
-          .fail(function(data) {
-             console.warn("Error! Data: " + data.statusText);
-             $('.subscription').removeClass('loading');
-             // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
-             if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-                 //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
-                 console.log("Success! Data: " + data.statusText);
-                 //Success!
-                 $('.subscription').addClass('success');
-             } else {
-               $('.subscription').addClass('warning');
-             }
-          });
         }
       });
     }
