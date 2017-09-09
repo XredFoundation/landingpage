@@ -129,6 +129,7 @@ $(document)
                    'pre-sale',
                    'ico',
                    'tokens',
+                   'bonuses',
                    'bounty',
                    'team',
                    'documents',
@@ -152,6 +153,14 @@ $(document)
                    'bonuses-period-3week',
                    'bonuses-period-4week',
                    'bonuses-period-5week',
+                   'bounty-aim',
+                   'bounty-share',
+                   'bounty-facebook',
+                   'bounty-twitter',
+                   'bounty-bitcointalk',
+                   'bounty-discussions',
+                   'bounty-translations',
+                   'bounty-special',
                    'name-share',
                    'among-users',
                    'purchased-fund',
@@ -294,7 +303,7 @@ $(document)
      * Vega.js
      **/
 
-    function addVgExample(path, id, options) {
+    function addVg(path, id, options) {
       d3.json(path, function (error, vgSpec) {
         if (error) {
           return console.error(error);
@@ -318,14 +327,26 @@ $(document)
         }
       ]
     }
-    addVgExample("assets/token-pie.vg.json", "#token-distribution", tokensOpts);
+    addVg("assets/token-pie.vg.json", "#token-distribution", tokensOpts);
 
     var bonusesOpts = {
       showAllFields: false,
       fields: []
     }
 
-    addVgExample("assets/bonuses-radial.vg.json", "#token-bonus", bonusesOpts);
+    addVg("assets/bonuses-radial.vg.json", "#token-bonus", bonusesOpts);
+
+    var bountyOpts = {
+      showAllFields: false,
+      fields: [
+        {
+          field: "percents",
+          title: "%",
+          formatType: "number"
+        }
+      ]
+    }
+    addVg("assets/bounty-pie.vg.json", "#token-bounty", bountyOpts);
 
     /**
      * Form validations
