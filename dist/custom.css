@@ -198,3 +198,7 @@
   color: #db2828;
   font-size: 1.1em;
 }
+
+.container.social .column {
+  padding-top: 1em;
+}
