@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION;TYPE=WORK:3.0
+FN;CHARSET=UTF-8;:Support Team
+N;CHARSET=UTF-8;:Support Team;;;;
+PROFILE:VCARD
+ADR;CHARSET=UTF-8;:;;Ltd 3rd Floor, 207 Regent Street;London;;W1B 3HH;UK
+EMAIL:support@xred.co
+ORG;CHARSET=UTF-8;:XRED Foundation
+URL:https://xred.co
+END:VCARD
+  

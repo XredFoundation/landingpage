@@ -202,3 +202,16 @@
 .container.social .column {
   padding-top: 1em;
 }
+
+.mrk_w_ratingcount_left {
+  left: 10px !important;
+}
+
+#bounty .grid .column {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.mrk_widgetLoader {
+  padding-bottom: 2em;
+}
