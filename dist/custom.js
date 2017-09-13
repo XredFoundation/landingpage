@@ -397,6 +397,16 @@ $(document)
       onSuccess: function(event, fields) {
         event.preventDefault();
 
+        // track conversion in GA
+        ga('send',
+          {
+            hitType: 'event',
+            eventCategory: 'presale',
+            eventAction: 'send',
+            eventLabel: 'main'
+          }
+        );
+
         // Use Ajax to submit form data
         var url = 'https://script.google.com/macros/s/AKfycbxYvRZ8DJBa8CwHUVl1aSUlSyIOgLQsL0tqNKADfpOXC7rI-rDs/exec';
         // show the loading
@@ -435,6 +445,16 @@ $(document)
       },
       onSuccess: function(event, fields) {
         event.preventDefault();
+
+        // track conversion in GA
+        ga('send',
+          {
+            hitType: 'event',
+            eventCategory: 'subscription',
+            eventAction: 'send',
+            eventLabel: 'main'
+          }
+        );
 
         // Use Ajax to submit form data
         var url = 'https://script.google.com/macros/s/AKfycbxUYRxHb8All5p6fApItKM5f6XwOkrpHqewJFe2iWTN3mWPwMY/exec';
