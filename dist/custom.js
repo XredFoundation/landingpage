@@ -110,6 +110,14 @@ $(document)
     	}, function(err, t) {
         i18next_render(err, t);
         $('.ui.dropdown.language').dropdown('set selected', [i18next.language.split('-')[0]]);
+
+        setTimeout(function() {
+          if(new String(document.location.search).indexOf('mrkRef')) {
+            $(document.body).animate({
+              "scrollTop": $("#bounty_participate").offset().top
+            }, "fast");
+          }
+        }, 2000);
       });
 
     var i18next_render = function(err, t) {
