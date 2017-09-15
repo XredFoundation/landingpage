@@ -303,7 +303,8 @@ $(document)
                    'access-restriction-body',
                    'access-restriction-right',
                    'access-restriction-no-use',
-                   'access-restriction-right-use'
+                   'access-restriction-right-use',
+                   'choose-translation'
                  ];
 
       for(var i in names) {

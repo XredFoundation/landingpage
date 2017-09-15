@@ -187,5 +187,6 @@
   "i18n-access-restriction-body": "In your location you cannot use this website due to domestic laws. Please read our Terms and Conditions document before you decide to use our website.",
   "i18n-access-restriction-right": "Have we defined your location right?",
   "i18n-access-restriction-no-use": "Yes, I will not use your website",
-  "i18n-access-restriction-right-use": "No, I will use your website"
+  "i18n-access-restriction-right-use": "No, I will use your website",
+  "i18n-choose-translation": "Choose from available translations"
 }

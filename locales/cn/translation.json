@@ -187,5 +187,6 @@
   "i18n-access-restriction-body":"受国内法的限制，您无法在您的所在地使用本网站。请在决定使用本网站之前阅读我们的合同条款。",
   "i18n-access-restriction-right":"我们对您所在地的说明是否正确？",
   "i18n-access-restriction-no-use":"是的，我将不会使用你们的网站",
-  "i18n-access-restriction-right-use":"不正确，我将会使用你们的网站"
+  "i18n-access-restriction-right-use":"不正确，我将会使用你们的网站",
+  "i18n-choose-translation": "从以下语言中选择"
 }
