@@ -1,6 +1,6 @@
 $(document)
   .ready(function() {
-    var preSaleDate  = "2017-10-01";
+    var preSaleDate  = "2017-10-16";
     var icoStartDate = "2017-11-01";
     var icoEndDate   = "2017-12-15";
 
