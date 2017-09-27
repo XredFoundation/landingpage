@@ -112,7 +112,7 @@ $(document)
         $('.ui.dropdown.language').dropdown('set selected', [i18next.language.split('-')[0]]);
 
         setTimeout(function() {
-          if(new String(document.location.search).indexOf('mrkRef')) {
+          if(new String(document.location.search).indexOf('mrkRef') != -1) {
             $(document.body).animate({
               "scrollTop": $("#bounty_participate").offset().top
             }, "fast");
