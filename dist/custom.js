@@ -50,7 +50,7 @@ $(document)
       transition: 'swing down',
       onChange: function(value, text, $choice) {
         if($choice.attr("data-type") == "link" && $("#" + value).length != 0) {
-          $(document.body).animate({
+          $('html, body').animate({
             "scrollTop": $("#" + value).offset().top
           }, "fast");
         }
@@ -113,7 +113,7 @@ $(document)
 
         setTimeout(function() {
           if(new String(document.location.search).indexOf('mrkRef') != -1) {
-            $(document.body).animate({
+            $('html, body').animate({
               "scrollTop": $("#bounty_participate").offset().top
             }, "fast");
           }
