@@ -104,7 +104,7 @@ $(document)
         backend: {
           // for all available options read the backend's repository readme file
           loadPath: 'locales/{{lng}}/{{ns}}.json',
-          whitelist: ['en', 'es', 'de', 'ru', 'fr', 'jp', 'ch', 'kr'],
+          whitelist: ['en', 'es', 'de', 'ru', 'ch'],
           fallbackLng: 'en'
         }
     	}, function(err, t) {
