@@ -188,5 +188,10 @@
   "i18n-access-restriction-right":"我们对您所在地的说明是否正确？",
   "i18n-access-restriction-no-use":"是的，我将不会使用你们的网站",
   "i18n-access-restriction-right-use":"不正确，我将会使用你们的网站",
-  "i18n-choose-translation": "从以下语言中选择"
+  "i18n-choose-translation": "从以下语言中选择",
+  "i18n-ico-address": "Crowdsale地址",
+  "i18n-ico-address-ether-scan": "在EtherScan查询",
+  "i18n-ico-address-instructions": "指示",
+  "i18n-ico-address-escrow-agreement": "如果我们的ICO没有在ICO结束时筹到最少$1.5m 以太坊，所有筹款将会被退还。",
+  "i18n-current-result": "目前结果"
 }

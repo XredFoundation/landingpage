@@ -188,5 +188,10 @@
   "i18n-access-restriction-right": "Мы правильно определили вашу локацию?",
   "i18n-access-restriction-no-use": "Да, я не буду использовать вебсайт",
   "i18n-access-restriction-right-use": "Нет, я буду использовать вебсайт",
-  "i18n-choose-translation": "Выберите из доступных переводов"
+  "i18n-choose-translation": "Выберите из доступных переводов",
+  "i18n-ico-address": "Адрес продажи",
+  "i18n-ico-address-ether-scan": "Проверьте на EtherScan",
+  "i18n-ico-address-instructions": "Инструкции",
+  "i18n-ico-address-escrow-agreement": "Если наше ICO не достигнет минимальных сборов в размере $1.5М в ETH эквиваленте в конце периода ICO, все инвестиции будут возвращены.",
+  "i18n-current-result": "Текущий результат"
 }

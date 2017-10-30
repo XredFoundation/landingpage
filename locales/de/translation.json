@@ -188,5 +188,10 @@
   "i18n-access-restriction-right": "Haben wir Ihren Standort richtig definiert?",
   "i18n-access-restriction-no-use": "Ja, ich werde Ihre Website nicht nutzen",
   "i18n-access-restriction-right-use": "Nein, ich werde Ihre Website benutzen",
-  "i18n-choose-translation": "Wählen Sie aus verfügbaren Übersetzungen"
+  "i18n-choose-translation": "Wählen Sie aus verfügbaren Übersetzungen",
+  "i18n-ico-address": "Crowdsale Adresse",
+  "i18n-ico-address-ether-scan": "Überprüfen Sie EtherScan",
+  "i18n-ico-address-instructions": "Anleitung",
+  "i18n-ico-address-escrow-agreement": "Wenn unser ICO am Ende der ICO-Periode keine Mindestfinanzierung von 1,5M$ in der ETH erreicht, werden alle Erlöse zurückerstattet.",
+  "i18n-current-result": "Aktuelles Ergebnis"
 }

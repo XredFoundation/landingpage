@@ -304,7 +304,12 @@ $(document)
                    'access-restriction-right',
                    'access-restriction-no-use',
                    'access-restriction-right-use',
-                   'choose-translation'
+                   'choose-translation',
+                   "ico-address",
+                   "ico-address-ether-scan",
+                   "ico-address-instructions",
+                   "ico-address-escrow-agreement",
+                   "current-result"
                  ];
 
       for(var i in names) {
@@ -323,6 +328,7 @@ $(document)
 
       document.title = i18next.t('i18n-title-page');
     }
+
     /**
      * Vega.js
      **/
@@ -574,4 +580,23 @@ $(document)
         }
       });
     }
+
+    var jqxhr = $.get('https://wallet.xred.co/api/v1/statistic/mainnet', function(data) {
+       for(i in data) {
+         $("current-result-" + i).val(data[i]);
+       }
+    })
+    .fail(function(data) {
+       console.warn("Error! Data: " + data.statusText);
+    });
+    setInterval(function(){
+      var jqxhr = $.get('https://wallet.xred.co/api/v1/statistic/mainnet', function(data) {
+        for(i in data) {
+          $("current-result-" + i).val(data[i]);
+        }
+      })
+      .fail(function(data) {
+         console.warn("Error! Data: " + data.statusText);
+      });
+    }, 1000 * 60);
 });
