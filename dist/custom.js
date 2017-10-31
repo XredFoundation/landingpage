@@ -309,7 +309,8 @@ $(document)
                    "ico-address-ether-scan",
                    "ico-address-instructions",
                    "ico-address-escrow-agreement",
-                   "current-result"
+                   "current-result",
+                   "ico-token-address"
                  ];
 
       for(var i in names) {

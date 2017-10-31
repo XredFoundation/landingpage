@@ -193,5 +193,6 @@
   "i18n-ico-address-ether-scan": "Überprüfen Sie EtherScan",
   "i18n-ico-address-instructions": "Anleitung",
   "i18n-ico-address-escrow-agreement": "Wenn unser ICO am Ende der ICO-Periode keine Mindestfinanzierung von 1,5M$ in der ETH erreicht, werden alle Erlöse zurückerstattet.",
-  "i18n-current-result": "Aktuelles Ergebnis"
+  "i18n-current-result": "Aktuelles Ergebnis",
+  "i18n-ico-token-address": "Token Adresse"
 }

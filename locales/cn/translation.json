@@ -193,5 +193,6 @@
   "i18n-ico-address-ether-scan": "在EtherScan查询",
   "i18n-ico-address-instructions": "指示",
   "i18n-ico-address-escrow-agreement": "如果我们的ICO没有在ICO结束时筹到最少$1.5m 以太坊，所有筹款将会被退还。",
-  "i18n-current-result": "目前结果"
+  "i18n-current-result": "目前结果",
+  "i18n-ico-token-address": "令牌地址"
 }
