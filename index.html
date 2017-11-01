@@ -396,17 +396,19 @@
               </h1>
               <p>
                 <span class="i18n-period-ico">The ICO will be available to purchase</span> </br> <span class="i18n-from">from</span> <b class="moment-ico-start">November 1</b> <span class="i18n-to">to</span> <b class="moment-ico-end">December 15</b>
-                <div class="ui green big active progress" id="ico-counter" data-percent="0">
+                <div class="ui yellow big active progress" id="ico-counter" data-percent="0">
                   <div class="bar"></div>
-                  <div class="label i18n-ico-day-remain"></div>
+                  <div class="label i18n-ico-day-remain-end"></div>
                 </div>
               </p>
             </div>
+            <!--
             <div class="column wide padding-2-em">
               <h2 class="ui inverted header">
                 <a class="i18n-calendar-store" href="assets/ICO.ics">Store in Calendar</a>
               </h2>
             </div>
+            -->
             <div class="column wide padding-2-em">
               <h2 class="ui header">
                 <span class="i18n-ico-address">Crowdsale address</span>
@@ -415,7 +417,7 @@
                 <br/><br/>
                 <a class="i18n-ico-address-ether-scan" href="https://etherscan.io/address/0x7f3bfe88fb97d275e83d9bdd93aa7a0fd0e49981">Check on EtherScan</a>
                 <br/><br/>
-                <a class="i18n-ico-address-instructions" href="https://medium.com/@XREDFoundation/exciting-xred-ico-will-start-with-these-parameters-6bf6409ef3ac">Instructions</a>
+                <a class="i18n-ico-address-instructions" href="https://medium.com/@XREDFoundation/how-to-participate-in-the-xred-foundation-ico-117a6f25246e">Instructions</a>
                 <br/><br/>
                 <span class="i18n-ico-address-escrow-agreement">If ICO won't gather 1.5M$ in ETH equivalent at the end, we will refund all.</span>
                 <br/><br/>
@@ -437,19 +439,19 @@
                   <div class="ui mini image">
                     <img src="/images/eth.svg">
                   </div>
-                  <h5 class="ui header" id="current-result-eth"> 0 <br> ETH </h5>
+                  <h5 class="ui header"> <span id="current-result-eth">0</span> <br> ETH </h5>
                 </div>
                 <div class="column center aligned">
                   <div class="ui mini image">
                     <img src="/images/dollar.svg">
                   </div>
-                  <h5 class="ui header" id="current-result-usd"> 0 <br> USD </h5>
+                  <h5 class="ui header"> <span id="current-result-usd">0</span> <br> USD </h5>
                 </div>
                 <div class="column center aligned">
                   <div class="ui mini image">
                     <img src="/images/euro.svg">
                   </div>
-                  <h5 class="ui header" id="current-result-eur"> 0 <br> EUR </h5>
+                  <h5 class="ui header"> <span id="current-result-eur">0</span> <br> EUR </h5>
                 </div>
               </div>
             </div>

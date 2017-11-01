@@ -90,7 +90,7 @@ $(document)
     $('#pre-sale-counter').progress();
 
     var dateico1 = new Date();
-    var dateico2 = new Date(icoStartDate); // November
+    var dateico2 = new Date(icoEndDate); // DEC
     var timeicoDiff = Math.abs(dateico2.getTime() - dateico1.getTime());
     var difficoDays = Math.ceil(timeicoDiff / (1000 * 3600 * 24));
 
@@ -322,7 +322,7 @@ $(document)
       $(".moment-ico-end").html(moment(icoEndDate).format('ddd, MMMM D (Y) HH:mm UTC'));
 
       $('#pre-sale-counter').find('.label').html(i18next.t('i18n-pre-sale-day-remain', {count: new Number(diffpresaleDays).valueOf()}));
-      $('#ico-counter').find('.label').html(i18next.t('i18n-ico-day-remain', {count: new Number(difficoDays).valueOf()}));
+      $('#ico-counter').find('.label').html(i18next.t('i18n-ico-day-remain-end', {count: new Number(difficoDays).valueOf()}));
 
       $('.i18n-team-vacancy-description').html(i18next.t('i18n-team-vacancy-description', {resume: '<a href="mailto:support@xred.co">' + i18next.t('i18n-team-send-cv') + '</a>'}));
       $('.i18n-e-mail').attr('placeholder', i18next.t('i18n-e-mail'));
@@ -584,7 +584,7 @@ $(document)
 
     var jqxhr = $.get('https://wallet.xred.co/api/v1/statistic/mainnet', function(data) {
        for(i in data) {
-         $("current-result-" + i).val(data[i]);
+         $("#current-result-" + i).text(data[i]);
        }
     })
     .fail(function(data) {
@@ -593,7 +593,7 @@ $(document)
     setInterval(function(){
       var jqxhr = $.get('https://wallet.xred.co/api/v1/statistic/mainnet', function(data) {
         for(i in data) {
-          $("current-result-" + i).val(data[i]);
+          $("#current-result-" + i).text(data[i]);
         }
       })
       .fail(function(data) {
