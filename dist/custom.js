@@ -310,7 +310,19 @@ $(document)
                    "ico-address-instructions",
                    "ico-address-escrow-agreement",
                    "current-result",
-                   "ico-token-address"
+                   "ico-token-address",
+                   "proposal-place",
+                   "proposal-place-description",
+                   "proposal-place-item",
+                   "proposal-place-cost",
+                   "proposal-place-price",
+                   "proposal-place-build",
+                   "proposal-place-outlay",
+                   "proposal-place-sale",
+                   "proposal-place-gross",
+                   "proposal-place-roi",
+                   "proposal-place-bottom-1",
+                   "proposal-place-bottom-2"
                  ];
 
       for(var i in names) {

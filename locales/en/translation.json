@@ -199,5 +199,17 @@
   "i18n-ico-address-instructions": "Instructions",
   "i18n-ico-address-escrow-agreement": "If our ICO does not reach minimum funding of $1.5m in ETH at the end of the ICO period all proceeds will be refunded.",
   "i18n-current-result": "Current result",
-  "i18n-ico-token-address": "Token address"
+  "i18n-ico-token-address": "Token address",
+  "i18n-proposal-place": "Proposal for XRED first development site",
+  "i18n-proposal-place-description": "This off market property is located in Earls Court London SW5. XRED Propose to purchase the property in Eardley Crescent Earls Court and convert the existing Doctor`s Surgery to a high end boutique hotel then sell on the open market. This property development site is adjacent to the stunning new development which was once the Earls Court Exhibition Centre, which is being transformed to the largest regeneration opportunity in Central London <a href='https://www.capitalandcounties.com/property/ec-properties'>https://www.capitalandcounties.com/property/ec-properties</a>. This new development will include 8,000 residential flats, retail outlets and a new convention centre. The prices of Commercial Property in this location are going to “moon” and the demand for high end boutique hotel accommodation will also “moon” making this a very desirable Business Opportunity. The figures below will give a great return in dividends to all our Investors.",
+  "i18n-proposal-place-item": "Item",
+  "i18n-proposal-place-cost": "Cost",
+  "i18n-proposal-place-price": "Purchase Price Including Stamp Duties and Costs",
+  "i18n-proposal-place-build": "Conversion/Build costs",
+  "i18n-proposal-place-outlay": "TOTAL OUTLAY",
+  "i18n-proposal-place-sale": "GDV/ Sale Price     In excess of",
+  "i18n-proposal-place-gross": "Gross Profit",
+  "i18n-proposal-place-roi": "<b>ROI</b>",
+  "i18n-proposal-place-bottom-1": "This development will take 10 months from start to finish.",
+  "i18n-proposal-place-bottom-2": "The Dividends to investors will be <b>£750,000 ($1,000,000)</b>"
 }

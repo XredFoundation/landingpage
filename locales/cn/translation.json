@@ -199,5 +199,17 @@
   "i18n-ico-address-instructions": "指示",
   "i18n-ico-address-escrow-agreement": "如果我们的ICO没有在ICO结束时筹到最少$1.5m 以太坊，所有筹款将会被退还。",
   "i18n-current-result": "目前结果",
-  "i18n-ico-token-address": "令牌地址"
+  "i18n-ico-token-address": "令牌地址",
+  "i18n-proposal-place": "XRED第一个房地产开发项目方案建议书",
+  "i18n-proposal-place-description": "这个市场外房地产(不公开招标的房地产项目)位于Earls Court London SW5。XRED计划购买Eardley Crescent Earls Court内的房地产，将其发展、装修现有的Doctor`s Surgery成为高档精品宾馆，并向公开市场销售。这个房地产发展场地位于曾经是Earls Court Exhibition Centre的华丽的新建筑旁边，Earls Court Exhibition Centre正被转化为伦敦中心最大的改造项目。<a href='https://www.capitalandcounties.com/property/ec-properties'>https://www.capitalandcounties.com/property/ec-properties</a>这个新的改造计划将包括800个住宅公寓，零售奥特莱斯和一个新的会展中心。在这个地段的商业地产价格将会“moon”（飞速上升），入住高档精品宾馆的需求也会 “moon”,使其成为一个非常令人向往的商业机遇。以下数值将给我们的投资者巨大的红利作为投资回报。",
+  "i18n-proposal-place-item": "项目",
+  "i18n-proposal-place-cost": "成本",
+  "i18n-proposal-place-price": "购入价格（含税务等成本）",
+  "i18n-proposal-place-build": "发展装修成本",
+  "i18n-proposal-place-outlay": "共计成本",
+  "i18n-proposal-place-sale": "总发展价值/销售价       大余",
+  "i18n-proposal-place-gross": "毛利率",
+  "i18n-proposal-place-roi": "<b>投资回报率</b>",
+  "i18n-proposal-place-bottom-1": "这个项目从开始到结束将用时10个月。",
+  "i18n-proposal-place-bottom-2": "给投资者的红利将为<b>£750,000 ($1,000,000)</b>"
 }

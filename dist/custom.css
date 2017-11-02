@@ -197,6 +197,9 @@
   font-size: 1.5rem;
 }
 
+.token-address {
+  font-size: 1.5rem;
+}
 
 @media only screen and (max-width: 700px) {
   .ui.fixed.menu {
@@ -222,6 +225,10 @@
   }
   .crowdsale-address {
     color: red;
+    font-size: 1rem;
+    margin-left: -1.5rem;
+  }
+  .token-address {
     font-size: 1rem;
     margin-left: -1.5rem;
   }

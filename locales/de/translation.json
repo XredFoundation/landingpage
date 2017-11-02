@@ -199,5 +199,17 @@
   "i18n-ico-address-instructions": "Anleitung",
   "i18n-ico-address-escrow-agreement": "Wenn unser ICO am Ende der ICO-Periode keine Mindestfinanzierung von 1,5M$ in der ETH erreicht, werden alle Erlöse zurückerstattet.",
   "i18n-current-result": "Aktuelles Ergebnis",
-  "i18n-ico-token-address": "Token Adresse"
+  "i18n-ico-token-address": "Token Adresse",
+  "i18n-proposal-place": "Vorschlag für die erste XRED-Entwicklungsstätte",
+  "i18n-proposal-place-description": "Diese Off-Market-Immobilie befindet sich in Earls Court London SW5. XRED Schlagen Sie vor, die Immobilie in Eardley Crescent Earls Court zu erwerben und die bestehende Doctor`s Surgery in ein hochwertiges Boutique-Hotel umzuwandeln und dann auf dem freien Markt zu verkaufen. Diese Grundstücksentwicklungsanlage grenzt an die atemberaubende neue Entwicklung an, die einst das Earls Court Exhibition Centre war, das zur größten Regenerationsmöglichkeit im Zentrum von London umgewandelt wird. <a href='https://www.capitalandcounties.com/property/ec-properties'>https://www.capitalandcounties.com/property/ec-properties</a>. Diese neue Entwicklung wird 8.000 Wohneinheiten, Einzelhandelsgeschäfte und ein neues Kongresszentrum umfassen. Die Preise für Gewerbeimmobilien in diesem Ort werden "Mond" und die Nachfrage nach High-End-Boutique-Hotel Unterkunft wird auch "Mond" machen dies eine sehr wünschenswerte Business Opportunity. Die folgenden Zahlen werden allen unseren Investoren eine hohe Dividendenrendite einbringen.",
+  "i18n-proposal-place-item": "Artikel",
+  "i18n-proposal-place-cost": "Kosten",
+  "i18n-proposal-place-price": "Kaufpreis inklusive Stamp Duties und Kosten",
+  "i18n-proposal-place-build": "Conversion/Build Kosten",
+  "i18n-proposal-place-outlay": "GESAMTANZEIGE",
+  "i18n-proposal-place-sale": "GDV / Verkaufspreis     Mehr als",
+  "i18n-proposal-place-gross": "Bruttoertrag",
+  "i18n-proposal-place-roi": "<b>ROI</b>",
+  "i18n-proposal-place-bottom-1": "Diese Entwicklung wird 10 Monate von Anfang bis Ende dauern.",
+  "i18n-proposal-place-bottom-2": "Die Dividenden an die Anleger werden <b>£750,000 ($1,000,000)</b>"
 }
