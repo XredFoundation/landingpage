@@ -322,7 +322,11 @@ $(document)
                    "proposal-place-gross",
                    "proposal-place-roi",
                    "proposal-place-bottom-1",
-                   "proposal-place-bottom-2"
+                   "proposal-place-bottom-2",
+                   "advisor",
+                   "advisor-1-name",
+                   "advisor-1-position",
+                   "advisor-1-description"
                  ];
 
       for(var i in names) {

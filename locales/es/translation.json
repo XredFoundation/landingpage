@@ -201,7 +201,7 @@
   "i18n-current-result": "Resultado actual",
   "i18n-ico-token-address": "Dirección del token",
   "i18n-proposal-place": "Propuesta para el primer sitio de desarrollo XRED",
-  "i18n-proposal-place-description": "Esta propiedad fuera del mercado se encuentra en Earls Court London SW5. XRED Propone comprar la propiedad en Eardley Crescent Earls Court y convertir la Cirugía de Doctor existente en un hotel boutique de alta gama y luego venderla en el mercado abierto. Este sitio de desarrollo de propiedad se encuentra junto al impresionante nuevo desarrollo que alguna vez fue el Centro de Exhibiciones de Earls Court, que se está transformando en la mayor oportunidad de regeneración en el centro de Londres <a href='https://www.capitalandcounties.com/property/ec-properties'>https://www.capitalandcounties.com/property/ec-properties</a>. Este nuevo desarrollo incluirá 8,000 pisos residenciales, puntos de venta y un nuevo centro de convenciones. Los precios de la propiedad comercial en esta ubicación van a "la luna" y la demanda de alojamiento de hotel boutique de alta gama también "luna" haciendo de esto una oportunidad de negocio muy deseable. Las cifras a continuación darán un gran rendimiento en dividendos a todos nuestros Inversores.",
+  "i18n-proposal-place-description": "Esta propiedad fuera del mercado se encuentra en Earls Court London SW5. XRED Propone comprar la propiedad en Eardley Crescent Earls Court y convertir la Cirugía de Doctor existente en un hotel boutique de alta gama y luego venderla en el mercado abierto. Este sitio de desarrollo de propiedad se encuentra junto al impresionante nuevo desarrollo que alguna vez fue el Centro de Exhibiciones de Earls Court, que se está transformando en la mayor oportunidad de regeneración en el centro de Londres <a href='https://www.capitalandcounties.com/property/ec-properties'>https://www.capitalandcounties.com/property/ec-properties</a>. Este nuevo desarrollo incluirá 8,000 pisos residenciales, puntos de venta y un nuevo centro de convenciones. Los precios de la propiedad comercial en esta ubicación van a 'la luna' y la demanda de alojamiento de hotel boutique de alta gama también 'luna' haciendo de esto una oportunidad de negocio muy deseable. Las cifras a continuación darán un gran rendimiento en dividendos a todos nuestros Inversores.",
   "i18n-proposal-place-item": "ítem",
   "i18n-proposal-place-cost": "costo",
   "i18n-proposal-place-price": "Precio de compra incluyendo impuestos y costos de estampillas",
@@ -211,5 +211,9 @@
   "i18n-proposal-place-gross": "Beneficio bruto",
   "i18n-proposal-place-roi": "<b>ROI</b>",
   "i18n-proposal-place-bottom-1": "Este desarrollo tomará 10 meses de principio a fin.",
-  "i18n-proposal-place-bottom-2": "Los dividendos para los inversores serán <b>£750,000 ($1,000,000)</b>"
+  "i18n-proposal-place-bottom-2": "Los dividendos para los inversores serán <b>£750,000 ($1,000,000)</b>",
+  "i18n-advisor": "Berater",
+  "i18n-advisor-1-name": "Eric Alexandre",
+  "i18n-advisor-1-position": "Gründer | CEO Jetcoin Institut",
+  "i18n-advisor-1-description": "Eric ist Kreativdirektor und hat erfolgreich die Produktion und Kampagnen eines Kundenportfolios umgesetzt, das ua Samsung, Panasonic, Volkswagen, Elite Models, Fashion TV, BMW, JVC und Daikin umfasst. Eric arbeitet seit 2005 für das Elite Model Look China, Singapur und International Finals und ist seit 2010 Geschäftsführer von EML Singapore. Er hat viel versprechenden Talenten in den letzten Jahren geholfen, ein professionelles Image zu entwickeln und erkannte eine ähnliche Nachfrage nach Image- und PR-Management bei Künstlern und Sportlern. Aus dieser Erfahrung stammend und sich der frühen Herausforderungen der aufstrebenden Talente bewusst, beschloss er, das 'Jetcoin Institute' zu leiten, eine Organisation, die die Entwicklung junger Athleten und Künstler durch eine neue Kryptowährung namens 'Jetcoin' finanzieren will."
 }
