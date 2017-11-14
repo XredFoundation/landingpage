@@ -326,7 +326,16 @@ $(document)
                    "advisor",
                    "advisor-1-name",
                    "advisor-1-position",
-                   "advisor-1-description"
+                   "advisor-1-description",
+                   "important-update",
+                   "important-update-desc",
+                   "important-update-purch",
+                   "important-update-percent",
+                   "important-update-price",
+                   "important-update-cap",
+                   "important-update-opp-a",
+                   "important-update-opp-b",
+                   "important-update-opp-nb"
                  ];
 
       for(var i in names) {

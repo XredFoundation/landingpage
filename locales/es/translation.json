@@ -212,8 +212,17 @@
   "i18n-proposal-place-roi": "<b>ROI</b>",
   "i18n-proposal-place-bottom-1": "Este desarrollo tomará 10 meses de principio a fin.",
   "i18n-proposal-place-bottom-2": "Los dividendos para los inversores serán <b>£750,000 ($1,000,000)</b>",
-  "i18n-advisor": "Berater",
+  "i18n-advisor": "Tutor",
   "i18n-advisor-1-name": "Eric Alexandre",
-  "i18n-advisor-1-position": "Gründer | CEO Jetcoin Institut",
-  "i18n-advisor-1-description": "Eric ist Kreativdirektor und hat erfolgreich die Produktion und Kampagnen eines Kundenportfolios umgesetzt, das ua Samsung, Panasonic, Volkswagen, Elite Models, Fashion TV, BMW, JVC und Daikin umfasst. Eric arbeitet seit 2005 für das Elite Model Look China, Singapur und International Finals und ist seit 2010 Geschäftsführer von EML Singapore. Er hat viel versprechenden Talenten in den letzten Jahren geholfen, ein professionelles Image zu entwickeln und erkannte eine ähnliche Nachfrage nach Image- und PR-Management bei Künstlern und Sportlern. Aus dieser Erfahrung stammend und sich der frühen Herausforderungen der aufstrebenden Talente bewusst, beschloss er, das 'Jetcoin Institute' zu leiten, eine Organisation, die die Entwicklung junger Athleten und Künstler durch eine neue Kryptowährung namens 'Jetcoin' finanzieren will."
+  "i18n-advisor-1-position": "Fundador | CEO Jetcoin Instituto",
+  "i18n-advisor-1-description": "Eric es un director creativo que ha implementado con éxito la producción y las campañas de una cartera de clientes que incluye Samsung, Panasonic, Volkswagen, Elite Models, Fashion TV, BMW, JVC y Daikin, entre otros. Eric ha trabajado en las finales Elite Model Look China, Singapur e internacionales desde 2005 y es el director gerente de EML Singapur desde 2010. Ha ayudado a talentos prometedores a desarrollar una imagen de calidad profesional en los últimos años y reconoció una demanda similar de imagen y gestión de relaciones públicas entre artistas y atletas. Partiendo de esta experiencia y consciente de los desafíos iniciales que enfrentan los talentos emergentes, decidió encabezar el 'Jetcoin Institute', una organización destinada a financiar el desarrollo de jóvenes atletas y artistas a través de una nueva criptomoneda llamada 'jetcoin'.",
+  "i18n-important-update": "ACTUALIZACIÓN IMPORTANTE!!",
+  "i18n-important-update-desc": "El 1 de diciembre de 2017 a las 1800 UTC emitiremos a la venta el 39% de las acciones de XRED Foundation A Class Company. Será por orden de llegada. Esta es su oportunidad de ser propietario de una parte de XRED REAL ESTATE DEVELOPMENT & INVESTMENT COMPANY y compartir mayores ganancias de XRED. La venta de acciones finalizará al finalizar el ICO el 15 de diciembre de 2017.",
+  "i18n-important-update-purch": "Usted puede comprar acciones",
+  "i18n-important-update-percent": "Por ciento",
+  "i18n-important-update-price": "Precio",
+  "i18n-important-update-cap": "El límite para las ventas de acciones es 39% máximo. Todos los fondos compartidos se destinarán directamente al fondo XRED para comprar London Property Developments. Los accionistas votarán a través de la aplicación XRED Wallet a:",
+  "i18n-important-update-opp-a": "A/ Venda la propiedad desarrollada en el mercado abierto con fines de lucro, que se dividirá equitativamente entre Accionistas y Socios simbólicos de acuerdo con la cantidad de acciones y Tokens que posean.",
+  "i18n-important-update-opp-b": "B/ Alquile la propiedad en el mercado abierto. Todos los ingresos netos de alquiler se dividirán en partes iguales entre los accionistas y los tenedores de tokens de acuerdo con la cantidad de acciones y fichas que posean. Usted tiene la opción de poseer una propiedad en el mercado inmobiliario de Londres.",
+  "i18n-important-update-opp-nb": "NB: Actualmente estamos trabajando arduamente en una aplicación XRED para facilitar el uso y una seguridad inigualable."
 }
