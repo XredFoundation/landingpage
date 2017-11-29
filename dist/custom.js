@@ -161,6 +161,7 @@ $(document)
                    'bonuses-period-3week',
                    'bonuses-period-4week',
                    'bonuses-period-5week',
+                   'bonuses-period-6week',
                    'bounty-aim',
                    'bounty-share',
                    'bounty-social',
